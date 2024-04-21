@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)
+}
+
+body{
+    /*background: linear-gradient(120deg, #555 0%, #333 100%);*/
+    background-image: url("media/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+article{
+    text-align: center;
+    margin: 100px 30px;
+    display: inline-block;
+}
+
+.team-members-header{
+    margin-top: 10px;
+    text-align: center;
+    font-size: xxx-large;
+    color: #333;
+}
+
+.yalanci-slide{
+    height: 400px;
+    width: 1000px;
+    display: block;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 5% 5%;
+    float: left;
+}
+
+.slides{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 5% 5%;
+    float: left;
+}
+.slides.active {
+    opacity: 1;
+}
+
+.home-p{
+    display: block;
+    margin-top: 15%;
+    font-size: xx-large;
+    letter-spacing: 3px;
+}
+
+.team-logo{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: -10px;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.team-logo img{
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.main-content{
+    opacity: 0.9;
+    padding: 10px 5px;
+    background-color: snow;
+    margin: 10px 20px;
+    min-height: 50vw;
+    border-radius: 10px;
+}
+
+#links{
+    display: none;
+}
+
+.logo{
+    margin: 5px 10px;
+    float: right;
+}
+
+.navbar{
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li{
+    display: inline;
+}
+
+.navbar ul li a{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: #555;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        display: none;
+    }
+
+    .mobile-menu{
+        display: block;
+        background-color: #333;
+    }
+
+    .menu-toggle{
+        position: sticky;
+        display: inline-block;
+        background-color: #333;
+        margin: 5px 0px;
+        padding: 8px 20px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    .slides{
+        max-width: 80%;
+    }
+    .yalanci-slide{
+        max-width: 100%;
+    }
+
+    .home-p{
+        margin: 10px 10px;
+    }
+
+    .menu-toggle:hover{
+        background-color: #6f6f6f;
+    }
+
+    .mobile-menu ul{
+        list-style-type: none;
+        padding: 0;
+        background-color: #333;
+        top: 50px;
+        left: 0;
+        width: 100%;
+    }
+
+    .mobile-menu ul li{
+        padding: 10px 20px;
+        transition: background-color 0.3s ease;
+    }
+
+    .mobile-menu ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .mobile-menu ul li:hover{
+        background-color: #555;
+    }
+
+
+}
+
+
+footer{
+    background-color: #333;
+    opacity: 0.7;
+    position: fixed;
+    /*background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);*/
+    color: white;
+    text-align: center;
+    padding: 0px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+/* EMIL HAJIYEV */
+
+.hourOfCode-text{
+    margin: auto 20px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #0A3D91;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.up-side{
+    opacity: 0.9;
+    padding: 10px 5px;
+    background-color: snow;
+    margin: 10px 20px;
+    min-height: 20vw;
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.youtube{
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        display: block;
+    }
+    .up-side .youtube{
+        margin-left: 10px;
+        width: 350px;
+    }
+}
+
+.card{
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+    margin-bottom: 300px;
+}
+
+.cardimage{
+    height: 400px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.pic1{
+    background-image: url(https://i.ibb.co/ByxXCds/IMG-20240419-WA0010.jpg);
+}
+
+.pic2{
+   background-image: url(https://i.ibb.co/8jMbfSw/IMG-20240419-WA0006.jpg);
+}
+
+.pic3{
+    background-image: url(https://i.ibb.co/yqnQRXJ/Whats-App-Image-2024-04-19-at-21-30-47-744e2a53.jpg);
+}
+
+.pic4{
+    background-image: url(https://i.ibb.co/ZhmXSpt/IMG-20240419-WA0007.jpg);
+}
+
+/* EMIL JAFAROV */
+
+table{
+    width:70%;
+    
+    min-height: 30px;
+    
+}
+th{
+    font-weight: bold;
+    border: 2px solid rgb(21, 18, 42);
+}
+td{
+    border: 2px solid rgb(21, 18, 42);
+}
+table tr:nth-child(odd){
+    background-color: rgb(181, 236, 162);
+}
+table tr:nth-child(even){
+    background-color: rgb(227, 227, 227);
+}
+
+table, th, td{
+    border: 2px solid rgb(4, 9, 70);
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+.image{
+    align-items: center;
+    margin: 0;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-left: 36%;
+}
+.MM {
+    margin-left: 10%;
+    margin-top: 10px;   
+    margin-bottom: 10px;
+    
+}
+a:hover {
+    color: seagreen;
+}
+a {
+    color:blue;
+}
+
+@media screen and (max-width: 768px){
+    .image{
+        margin-left: 18%;
+    }
+    .codeacademy-img{
+        max-height: 150px;
+    }
+}
